@@ -3,33 +3,8 @@
 }
 
 .App-logo {
-  height: 50vmin;
+  height: 40vmin;
   pointer-events: none;
-<<<<<<< HEAD
-=======
-  color: red;
-  color: blue;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
-  color: red;
-  color: green;
->>>>>>> ac0a13af49e5a0ede25c13040a63e0e690557970
 }
 
 @media (prefers-reduced-motion: no-preference) {
