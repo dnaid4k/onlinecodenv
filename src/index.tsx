@@ -49,17 +49,21 @@ const App = () => {
     }
   };
 
-  return <div>
-    <textarea onChange={e => setInput(e.target.value)}></textarea>
+  return (
+  <div>
+    <textarea onChange={(e) => setInput(e.target.value)}></textarea>
     <div>
       <button onClick={onClick}>Submit</button>
     </div>
     <pre>{code}</pre>
-    <iframe sandbox="allow-same-origin" src="/test.html" />
+    <iframe sandbox="" srcDoc={html}/>
   </div>
-
-
+  );
 };
+
+const html = `
+<h1>Local HTML doc</h1>
+`;
 
 ReactDOM.render(
 <App />,
