@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 import { fetchPlugin } from './plugins/fetch-plugin';
+import CodeEditor from './components/code-editor';
 
 const App = () => {
   const ref = useRef<any>();
@@ -57,7 +58,7 @@ const App = () => {
               eval(event.data);
             } catch (err) {
               const root = document.querySelector('#root');
-              root.innerHTML = '<div>' + err + '</div>';
+              root.innerHTML = '<div style="color: red;"><h4>Runtime Error</h4>' + err + '</div>';
               console.error(err);
             }
           }, false);
@@ -68,9 +69,16 @@ const App = () => {
 
   return (
   <div>
-    <textarea onChange={(e) => setInput(e.target.value)}></textarea>
+    <CodeEditor />
+    <textarea 
+    value={input}
+    onChange={(e) => 
+      setInput(e.target.value)
+    }
+    ></textarea>
     <div>
-      <button onClick={onClick}>Submit</button>
+      {
+       <button onClick={onClick}>Submit</button> }
     </div>
     <iframe title="preview" ref={iframe} sandbox="allow-scripts" srcDoc={html}/>
   </div>
