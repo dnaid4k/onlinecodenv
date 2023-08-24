@@ -1,4 +1,4 @@
-1st part of project. Ended cuz difficulties it was git commits and, reseting modules. Problem was required version for prettier as react 18.2.0 is too new. So react 17.0.0 was applied. See you in other repository it is CoEn2
+1st part of project. Ended cuz difficulties it was git commits and, reseting modules. Problem was required version for prettier and  react 18.2.0 was too new. So react 17.0.0 was applied. See you in other repository it is CoEn2
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
